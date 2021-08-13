@@ -1,0 +1,7 @@
+set arch mips:isa32
+symbol-file callme_mipsel
+target remote :1234
+b *pwnme+204
+c
+i r ra
+q

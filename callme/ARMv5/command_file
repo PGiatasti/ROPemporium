@@ -1,0 +1,8 @@
+set arch arm
+symbol-file callme_armv5-hf
+target remote :1234
+b *pwnme+84
+c
+ni
+i r pc
+q
